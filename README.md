@@ -1,2 +1,171 @@
-# WEB-PROFILE-INSTAGRAM
-file web ig tugas pemrograman web
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Profile Clone</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Font for Instagram Logo -->
+  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+  <style>
+    .instagram-logo {
+      font-family: 'Grand Hotel', cursive;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <div class="w-60 min-h-screen border-r border-gray-800 p-4 flex flex-col gap-6">
+      <h1 class="text-3xl instagram-logo mb-6">Instagram</h1>
+
+      <nav class="flex flex-col gap-4 flex-1">
+        <a href="#" class="flex items-center gap-3 hover:bg-gray-900 p-2 rounded-lg">
+          <i class="bi bi-house-door-fill text-xl"></i> Home
+        </a>
+        <a href="#" class="flex items-center gap-3 hover:bg-gray-900 p-2 rounded-lg">
+          <i class="bi bi-search text-xl"></i> Search
+        </a>
+        <a href="#" class="flex items-center gap-3 hover:bg-gray-900 p-2 rounded-lg">
+          <i class="bi bi-compass text-xl"></i> Explore
+        </a>
+        <a href="#" class="flex items-center gap-3 hover:bg-gray-900 p-2 rounded-lg">
+          <i class="bi bi-film text-xl"></i> Reels
+        </a>
+        <a href="#" class="flex items-center gap-3 hover:bg-gray-900 p-2 rounded-lg relative">
+          <i class="bi bi-chat-dots text-xl"></i> Messages
+          <span class="absolute left-5 -top-1 bg-red-600 text-xs px-1.5 py-0.5 rounded-full">9+</span>
+        </a>
+        <a href="#" class="flex items-center gap-3 hover:bg-gray-900 p-2 rounded-lg">
+          <i class="bi bi-heart text-xl"></i> Notifications
+        </a>
+        <a href="#" class="flex items-center gap-3 hover:bg-gray-900 p-2 rounded-lg">
+          <i class="bi bi-plus-square text-xl"></i> Create
+        </a>
+        <a href="#" class="flex items-center gap-3 hover:bg-gray-900 p-2 rounded-lg">
+          <div class="w-6 h-6 rounded-full overflow-hidden">
+            <img src="profileku.jpg" alt="Profile" class="w-full h-full object-cover">
+          </div>
+          Profile
+        </a>
+      </nav>
+
+      <div class="text-gray-400 text-sm mt-auto">Also from Meta</div>
+    </div>
+
+    <!-- Main Profile Content -->
+    <div class="flex-1 p-10 flex flex-col">
+      <!-- Profile Section -->
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        
+        <!-- Profile Picture -->
+        <div class="w-32 h-32 rounded-full overflow-hidden border-2 border-gray-500">
+          <img src="profileku.jpg" alt="Profile" class="w-full h-full object-cover">
+        </div>
+
+        <!-- User Info -->
+        <div class="flex flex-col gap-3 text-center md:text-left">
+          <div class="flex items-center gap-4">
+            <h2 class="text-xl font-semibold">angellynezky</h2>
+            <button class="btn btn-dark btn-sm">Edit profile</button>
+            <button class="btn btn-dark btn-sm">View archive</button>
+          </div>
+
+          <!-- Stats -->
+          <div class="flex gap-6 justify-center md:justify-start">
+            <span><strong>0</strong> posts</span>
+            <span><strong>1,471</strong> followers</span>
+            <span><strong>875</strong> following</span>
+          </div>
+
+          <!-- Bio -->
+          <p>ʚ🧸ɞ her</p>
+        </div>
+      </div>
+
+     <!-- Highlights -->
+<div class="flex gap-6 mt-8 justify-center md:justify-start">
+  <div class="flex flex-col items-center">
+    <div class="w-20 h-20 rounded-full border-2 border-gray-500 overflow-hidden">
+      <img src="highlight1.jpg" class="object-cover w-full h-full" alt="Highlight">
+    </div>
+    <span class="text-sm mt-2 text-gray-400">🧚🏻‍♀</span>
+  </div>
+
+  <div class="flex flex-col items-center">
+    <div class="w-20 h-20 rounded-full border-2 border-gray-500 overflow-hidden">
+      <img src="highlight2.jpg" class="object-cover w-full h-full" alt="Highlight">
+    </div>
+    <span class="text-sm mt-2 text-gray-400">👸🏻</span>
+  </div>
+
+  <div class="flex flex-col items-center">
+    <div class="w-20 h-20 rounded-full border-2 border-gray-500 overflow-hidden">
+      <img src="highlight3.jpg" class="object-cover w-full h-full" alt="Highlight">
+    </div>
+    <span class="text-sm mt-2 text-gray-400">👯‍♀</span>
+  </div>
+
+  <!-- New highlight -->
+  <div class="flex flex-col items-center">
+    <div class="w-20 h-20 rounded-full border-2 border-gray-500 flex items-center justify-center">
+      <span class="text-3xl">+</span>
+    </div>
+    <span class="text-sm mt-2 text-gray-400">New</span>
+  </div>
+</div>
+
+      <!-- Navigation Tabs -->
+      <div class="border-t border-gray-700 mt-12 flex justify-center gap-12 uppercase text-sm tracking-wider font-semibold">
+        <a href="#" class="flex items-center gap-2 py-3 border-t-2 border-white">
+          <i class="bi bi-grid-3x3"></i> Posts
+        </a>
+        <a href="#" class="flex items-center gap-2 py-3 text-gray-400 hover:text-white">
+          <i class="bi bi-film"></i> Reels
+        </a>
+        <a href="#" class="flex items-center gap-2 py-3 text-gray-400 hover:text-white">
+          <i class="bi bi-person-square"></i> Tagged
+        </a>
+      </div>
+
+      <!-- Share Photos -->
+      <div class="text-center mt-16 flex-1">
+        <h4 class="text-lg font-semibold">Share Photos</h4>
+        <p class="text-gray-400">When you share photos, they will appear on your profile.</p>
+        <a href="#" class="text-blue-400">Share your first photo</a>
+      </div>
+
+      <!-- Footer -->
+      <footer class="mt-16 text-gray-500 text-sm text-center space-y-2">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#">Meta</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Jobs</a>
+          <a href="#">Help</a>
+          <a href="#">API</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Locations</a>
+          <a href="#">Instagram Lite</a>
+          <a href="#">Meta AI</a>
+          <a href="#">Meta AI Articles</a>
+          <a href="#">Threads</a>
+          <a href="#">Contact Uploading & Non-Users</a>
+          <a href="#">Meta Verified</a>
+        </div>
+        <div>© 2025 Instagram from Meta</div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
